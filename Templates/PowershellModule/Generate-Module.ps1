@@ -47,6 +47,4 @@ $Tables | Foreach-Object {
     $templateGet = $templateGet.Replace("#Tablename#", $table)
     $templateGet = $templateGet.Replace("#TOKEN#", $Token)
     $templateGet | Set-Content (PathToTargetFile -NewFilename "$table\Get-$Token$Table`.ps1")
-
-    $propertyName = $Tables[0] | Get-Member -MemberType NoteProperty
 }
