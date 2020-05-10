@@ -40,7 +40,7 @@ function Get-MySqlResult {
 		[Parameter(Mandatory=$true)]
 		[string]$query,
 		[Parameter(Mandatory=$false)]
-		[hashtable]$parameter
+		[hashtable]$parameter = @{}
 	)
 
 	Process {
@@ -86,7 +86,7 @@ function Invoke-MySql {
 		[Parameter(Mandatory=$true)]
 		[string]$query,
 		[Parameter(Mandatory=$false)]
-		[hashtable]$parameter
+		[hashtable]$parameter = @{}
 	)
 
 	Process {
